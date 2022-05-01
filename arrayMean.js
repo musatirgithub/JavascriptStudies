@@ -7,20 +7,20 @@ The array will never be empty. */
 
 let scores = [70, 60, 40, 65, 90, 100];
 
-/* Solution - 1;
+/* Solution - 1; */
     function averageScore(scores){
-    let sum =0;
+    let avg =0;
     for (let i of scores){
-        sum += i;
+        avg += i/scores.length;
     }
-    return (sum/scores.length).toFixed(2);
+    return (avg).toFixed(2);
 }
 
-console.log(averageScore(scores)); */
+console.log(averageScore(scores));
 
 
 /* Solution - 2;  */
-function myAverage(arr1){
+/* function myAverage(arr1){
     let sum1 = scores.reduce(mySum);
     function mySum(total, val) {
         return (total + val);
@@ -28,4 +28,4 @@ function myAverage(arr1){
     return (sum1/arr1.length).toFixed(2);
 }
 
-console.log(myAverage(scores));
+console.log(myAverage(scores)); */
